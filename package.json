@@ -1,0 +1,35 @@
+{
+  "name": "three-playable-ad",
+  "version": "1.0.0",
+  "description": "A single-file HTML5 playable ad built with Three.js, with a fail-closed network-spec validator.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "validate": "node scripts/validate.ts",
+    "check": "npm run typecheck && npm run test && npm run build && npm run validate"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nain9Dev/three-playable-ad.git"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "dependencies": {
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/three": "^0.187.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vite-plugin-singlefile": "^2.3.4",
+    "vitest": "^5.1.1"
+  }
+}
